@@ -1,0 +1,42 @@
+
+  
+[
+    {
+      "model": "demoproject.fruit",
+      "pk": 1,
+      "fields": {
+        "name": "strawberry",
+        "color": 1
+      }
+    },
+    {
+      "model": "demoproject.fruit",
+      "pk": 2,
+      "fields": {
+        "name": "raspberry",
+        "color": 1
+      }
+    },
+    {
+      "model": "demoproject.fruit",
+      "pk": 3,
+      "fields": {
+        "name": "blueberry",
+        "color": 2
+      }
+    },
+    {
+      "model": "demoproject.color",
+      "pk": 1,
+      "fields": {
+        "name": "red"
+      }
+    },
+    {
+      "model": "demoproject.color",
+      "pk": 2,
+      "fields": {
+        "name": "blue"
+      }
+    }
+    ]
