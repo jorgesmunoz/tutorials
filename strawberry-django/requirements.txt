@@ -1,0 +1,5 @@
+django
+djangorestframework
+strawberry-graphql[debug-server]
+strawberry-graphql-django
+poetry
