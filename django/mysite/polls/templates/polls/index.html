@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+
+<body>
+    {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <li>
+            <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+    <!-- <div class="tenor-gif-embed" data-postid="16617306" data-share-method="host" data-aspect-ratio="1.5534"
+        data-width="100%"><a
+            href="https://tenor.com/view/jurassic-park-nedry-dennis-no-no-nah-you-didnt-say-the-magic-word-gif-16617306">Jurassic
+            Park Nedry Dennis GIF</a>from <a href="https://tenor.com/search/jurassic+park-gifs">Jurassic Park GIFs</a>
+    </div> -->
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</body>
+
+</html>
